@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>newsletter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card-contents">
+      <div class="card-left">
+        <p class="form-title">Stay updated!</p>
+        <p class="form-description">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="checklist">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon" />
+          <p>Product discovery and building what matters</p>
+        </div>
+        <div class="checklist">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon" />
+          <p>Measuring to ensure updates are a success</p>
+        </div>
+        <div class="checklist">
+          <img src="assets/images/icon-list.svg" alt="checkmark icon" />
+          <p>And much more!</p>
+        </div>
+        <div class="error-box">
+          <p class="mail-text">Email address</p>
+          <p class="error hidden">Valid Email Required</p>
+        </div>
+        <input
+          class="mail-placeholder"
+          type="email"
+          id="email"
+          placeholder="email@company.com"
+        />
+        <button class="subscribe-button">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      <div class="card-photo">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/illustration-sign-up-tablet.svg"
+          />
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
+      </div>
+    </div>
+
+    <!-- sucess message  -->
+    <div class="container hidden">
+      <div class="success-card">
+        <img class="success-icon" src="assets/images/icon-success.svg" alt="" />
+        <p class="greeting-message">Thanks for subscribing!</p>
+        <button class="dismiss-button">Dismiss Message</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
